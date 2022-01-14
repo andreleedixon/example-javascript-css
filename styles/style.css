@@ -1,0 +1,115 @@
+
+html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+  font-family: "Open oxygen", oxygen; /* this should be the rest of the output you got from Google fonts */
+  background-color: #191970;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #191970;
+  text-shadow: 3px 3px 1px black;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FFFF00;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+img {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+
+
+/* color: #191970; #4B0082; #FFFF00; #ADD8E6; */
+/* 
+Selector = This is the HTML element name at the start of the 
+ruleset. It defines the element(s) to be styled (in this example,
+<p> elements). To style a different element, change the selector.
+
+Declaration = This is a single rule like "color: red;." It specifies
+which of the element properties you want to style.
+
+Properties = These are the ways in which you can style an HTML element.
+(In this example, color is a property of the <p> elements) In CSS,
+you choose which properties you want to affect in the rule.
+
+Property Value = To the right of the property--after the colon--there
+is the property value. This chooses one out of many possible appearances
+for a given property. (For example, there are many color values in 
+addition to red.) 
+
+Note:
+
+Apart from the selector, each ruleset must be wrapped in curly braces. ({})
+
+Within each declaration, you must use a colon (:) to separate the property
+from its value or values.
+
+Within each ruleset, you must use a semicolon (;) to separate each declaration
+from the next one.
+
+
+width = 600px; This forces the body to always be 600 pixels wide.
+
+margin = 0 auto; When you set two values on a property like margin or padding,
+the first value affects the element's top and bottom side (setting it to 
+0 in this case); the second value affects the left and right side.
+(Here, auto is a special value that divides the availabel horizontal space
+evenly between the left and right). You can also use one, three, or four values,
+as documented in Margin Syntax.
+
+background-color = #FF9500; This sets the element's background color. This project
+uses a reddish orange for the body background color, as opposed to dark blue
+for the <html> element. (Feel free to experiment)
+
+padding = 0 20px 20px 20px; This sets four values for padding. The goal is to put
+some space around the content. In this example, there is no padding on the top
+of the body, and 20 pixels on the right, bottom, and left. The values set
+top, right, bottom, left in that order. As with margin, you can use two, three, or
+four values, as documented in Padding Syntax.
+
+border = 5px solid black; This sets values for the width, style and color of the
+border. In this case, it's a five-pixel-wide, solid black border, on all sides
+of the body.
+
+text-shadow = applies a shadow to the text content of the element.
+Its four values are:
+-The first pixel sets the horizontal offset of the shadow from the text:
+how far it moves across.
+-The second pixel value sets the vertial offset of the shadow from the text:
+how far it moves down.
+-The third pixel value sts the blur radius of the shadow. A larger value produces
+a more fuzzy-looking shadow.
+-The fourth value sets the base color of the shadow.
+
+Note- The body is a blick element, meaning it takes up space on the page. The
+margin applied to a block element will be respected by other elements
+on the page. In contrast, images are inline elements, for the auto margin
+trick to work on this image, we must give it block-level behavior using
+display: block;.
+
+Note- The instructions above assume that you're using an image smaller
+than the width set on the body (600 pixels). If your image is larger, it will 
+overflow the body, splilling into the rest of the page. To fis this, you can
+either: 1) reduce the image width using a graphics editor, or 
+2) use the CSS to size the image by setting the width property on the 
+<img> element with a smaller value.
+
+*/
